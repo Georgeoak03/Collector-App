@@ -22,10 +22,7 @@ $allResults = $query->fetchAll();
         <link rel="stylesheet" href="collector.css">
     <body>
         <h1>Wine Library</h1>
-        <p class="intro">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
-            interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero
-            are also reproduced in their exact original form, accompanied by English versions from
-            the 1914 translation by H. Rackham.</p>
+        <p class="intro">This is Wine Library! Use this to keep a record of what wines you've drunk and where.</p>
     <table>
         <thead>
         <tr class="heading-row">
