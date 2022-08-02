@@ -1,6 +1,6 @@
 html {
     background-color: black;
-    font-size: 14px;
+    font-size: 12px;
     color: white;
     font-family: Consolas, monaco, monospace;
     scroll-behavior: smooth;
@@ -10,15 +10,22 @@ html {
     box-sizing: border-box;
 }
 
-.heading {
+h1 {
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
-.heading-row{
+.intro {
+    padding: 10px 30px;
+}
+
+.heading-row {
     padding: 5px;
 }
+
 table {
     padding: 5px;
 }
@@ -29,4 +36,16 @@ table {
 
 .wine-content {
     color: lightpink;
+}
+
+.search {
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+table {
+    white-space: nowrap;
+    font-size: 12px;
 }
