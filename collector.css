@@ -1,0 +1,32 @@
+html {
+    background-color: black;
+    font-size: 14px;
+    color: white;
+    font-family: Consolas, monaco, monospace;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.heading-row{
+    padding: 5px;
+}
+table {
+    padding: 5px;
+}
+
+.wine {
+    color: darkseagreen;
+}
+
+.wine-content {
+    color: lightpink;
+}
