@@ -16,10 +16,15 @@ h1 {
     justify-content: center;
     text-align: center;
     padding: 20px;
+    position: fixed;
+    left: 75px;
 }
 
 .intro {
+    display: flex;
     padding: 10px 30px;
+    padding-top: 75px;
+    position: fixed;
 }
 
 .heading-row {
@@ -48,4 +53,14 @@ table {
 table {
     white-space: nowrap;
     font-size: 12px;
+    table-layout:fixed;
+}
+
+td, th {
+    border:1px solid black;
+    width:1px;white-space:nowrap;
+}
+.wineDateTable {
+    padding-top: 175px;
+    border:1px solid black;
 }
