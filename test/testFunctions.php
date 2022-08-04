@@ -4,7 +4,6 @@ require '../functions.php';
 use PHPUnit\Framework\TestCase;
 
 class functionsTest extends TestCase
-
 {
     function testSuccessDisplayWine()
     {
@@ -30,6 +29,5 @@ class functionsTest extends TestCase
         $expectedOutput = '';
         $actualOutput = displayWine($input);
         $this->assertEquals($expectedOutput, $actualOutput);
-
     }
 }

@@ -38,6 +38,3 @@ $wineCollector = dbpull();
         </div>
     </body>
 </html>
-
-
-
