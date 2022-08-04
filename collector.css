@@ -10,24 +10,31 @@ html {
     box-sizing: border-box;
 }
 
-h1 {
+.page-head {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     padding: 20px;
-    position: fixed;
-    left: 75px;
+    text-align: center;
 }
 
-.intro {
-    display: flex;
-    padding: 10px 30px;
-    padding-top: 75px;
-    position: fixed;
+.search {
+    text-align: center;
+}
+
+.search-parameters {
+    padding: 10px;
 }
 
 table {
     padding: 5px;
     font-size: 12px;
+    width: 100%;
+    white-space: nowrap;
+    display: block;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+    overflow-x: auto;
 }
 
 .wine {
@@ -38,13 +45,18 @@ table {
     color: lightpink;
 }
 
-.search {
-    padding: 5px;
+
+
+.wineDateTable {
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-wrap: nowrap;
 }
 
-.wineDateTable {
-    padding-top: 175px;
+@media screen and (min-width: 800px) {
+    .wineDateTable {
+        display: flex;
+    }
+
 }
