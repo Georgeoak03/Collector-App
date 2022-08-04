@@ -13,8 +13,6 @@ html {
 h1 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 20px;
     position: fixed;
     left: 75px;
@@ -27,12 +25,9 @@ h1 {
     position: fixed;
 }
 
-.heading-row {
-    padding: 5px;
-}
-
 table {
     padding: 5px;
+    font-size: 12px;
 }
 
 .wine {
@@ -50,17 +45,6 @@ table {
     text-align: center;
 }
 
-table {
-    white-space: nowrap;
-    font-size: 12px;
-    table-layout:fixed;
-}
-
-td, th {
-    border:1px solid black;
-    width:1px;white-space:nowrap;
-}
 .wineDateTable {
     padding-top: 175px;
-    border:1px solid black;
 }

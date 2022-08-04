@@ -1,26 +1,13 @@
 <?php
-
-$connectionString = 'mysql:host=db; dbname=winecollector';
-$dbUsername = 'root';
-$dbPassword = 'password';
-$db = new PDO($connectionString, $dbUsername, $dbPassword);
-
-$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
-$queryString = 'SELECT * FROM `wines` ORDER BY `date` DESC';
-$query = $db->prepare($queryString);
-$query->execute();
-
-$allResults = $query->fetchAll();
-
 require_once('functions.php');
-
+$wineCollector = dbpull();
 ?>
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wine Library</title>
         <link rel="stylesheet" href="collector.css">
+    </head>
     <body>
         <h1>Wine Library</h1>
         <p class="intro">This is Wine Library! Use this to keep a record of what wines you've drunk and where.
@@ -40,9 +27,9 @@ require_once('functions.php');
                         <th>Rating</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="db-input">
                     <?php
-                    foreach($allResults as $wines) {
+                    foreach($wineCollector as $wines) {
                         echo displayWine($wines);
                     }
                     ?>
