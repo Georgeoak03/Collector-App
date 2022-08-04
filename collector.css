@@ -1,0 +1,50 @@
+html {
+    background-color: black;
+    font-size: 12px;
+    color: white;
+    font-family: Consolas, monaco, monospace;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    left: 75px;
+}
+
+.intro {
+    display: flex;
+    padding: 10px 30px;
+    padding-top: 75px;
+    position: fixed;
+}
+
+table {
+    padding: 5px;
+    font-size: 12px;
+}
+
+.wine {
+    color: darkseagreen;
+}
+
+.wine-content {
+    color: lightpink;
+}
+
+.search {
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wineDateTable {
+    padding-top: 175px;
+}
